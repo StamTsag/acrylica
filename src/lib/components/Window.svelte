@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { blur } from 'svelte/transition';
+	import { blur, scale } from 'svelte/transition';
 	import Button from './ui/button/button.svelte';
 	import { X } from 'lucide-svelte';
 	import { apps } from '../../stores';
@@ -14,8 +14,8 @@
 </script>
 
 <div
-	class="fixed bottom-0 left-0 right-0 top-0 m-auto flex h-max max-h-[80vh] w-max min-w-[250px] flex-col overflow-hidden rounded-lg border border-border/50 bg-background/60 shadow-[0px_0px_10px_0px_rgba(0,_0,_0,_0.5)] backdrop-blur-md"
-	transition:blur={{ duration: 200, amount: 20, easing: quartInOut }}
+	class="fixed bottom-0 left-0 right-0 top-0 m-auto flex h-max max-h-[80vh] w-max flex-col overflow-hidden rounded-lg border border-border/50 bg-background/60 shadow-[0px_0px_10px_0px_rgba(0,_0,_0,_0.5)] backdrop-blur-md"
+	transition:scale={{ duration: 250, start: 0, easing: quartInOut, opacity: 1 }}
 	use:draggable={{ handle: '.handle' }}
 >
 	<div class="handle flex select-none items-center justify-end pl-2">
