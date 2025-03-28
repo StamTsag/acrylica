@@ -14,7 +14,7 @@
 </script>
 
 <div
-	class="fixed bottom-0 left-0 right-0 top-0 m-auto flex h-max max-h-[80vh] w-max flex-col overflow-hidden rounded-lg border border-border/50 bg-background/60 shadow-[0px_0px_10px_0px_rgba(0,_0,_0,_0.5)] backdrop-blur-md"
+	class="fixed bottom-0 left-0 right-0 top-0 m-auto flex h-max max-h-[80vh] w-max flex-col overflow-hidden rounded-lg border border-border/50 bg-background/75 shadow-[0px_0px_10px_0px_rgba(0,_0,_0,_0.5)] backdrop-blur-md"
 	transition:scale={{ duration: 250, start: 0, easing: quartInOut, opacity: 1 }}
 	use:draggable={{ handle: '.handle' }}
 >

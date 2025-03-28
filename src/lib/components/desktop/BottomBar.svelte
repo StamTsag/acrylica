@@ -21,7 +21,7 @@
 
 <div
 	in:fly={{ duration: 500, y: 100 }}
-	class="fixed bottom-4 left-0 right-0 m-auto flex w-max select-none items-center justify-center gap-x-1 overflow-hidden rounded-xl border-2 bg-background/25 p-2 backdrop-blur-lg"
+	class="fixed bottom-4 left-0 right-0 m-auto flex w-max select-none items-center justify-center gap-x-1 overflow-hidden rounded-xl border-2 bg-background/30 p-2 backdrop-blur-lg"
 >
 	{#each items as { title }}
 		<Button

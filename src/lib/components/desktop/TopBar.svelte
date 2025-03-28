@@ -10,8 +10,7 @@
 			month: 'long',
 			day: 'numeric',
 			hour: 'numeric',
-			minute: '2-digit',
-			hour12: true
+			minute: '2-digit'
 		});
 	}
 
@@ -24,7 +23,7 @@
 
 <div
 	in:fly={{ duration: 500, y: -100 }}
-	class="fixed left-0 right-0 top-2 z-[100] m-auto flex w-[75%] select-none items-center justify-center gap-x-1 overflow-hidden rounded-xl border bg-background/50 p-2.5 pl-3 pr-3 shadow-xl backdrop-blur-lg"
+	class="fixed left-0 right-0 top-2 z-[100] m-auto flex w-[75%] select-none items-center justify-center gap-x-1 overflow-hidden rounded-xl border bg-background/60 p-2.5 pl-3 pr-3 shadow-xl backdrop-blur-lg"
 >
 	<img src="/favicon.svg" alt="Logo" class="h-[24px] w-[24px]" draggable={false} />
 
