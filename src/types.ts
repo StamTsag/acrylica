@@ -2,6 +2,7 @@ export type AppNames =
 	| 'Browser'
 	| 'VS Code'
 	| 'Notepad'
+	| 'Calculator'
 	| 'Calendar'
 	| 'Camera'
 	| 'Settings'

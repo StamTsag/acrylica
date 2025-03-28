@@ -1,5 +1,6 @@
 import About from '$lib/components/windows/About.svelte';
 import Browser from '$lib/components/windows/Browser.svelte';
+import Calculator from '$lib/components/windows/Calculator.svelte';
 import Calendar from '$lib/components/windows/Calendar.svelte';
 import Camera from '$lib/components/windows/Camera.svelte';
 import Notepad from '$lib/components/windows/Notepad.svelte';
@@ -19,6 +20,10 @@ export const items: App[] = [
 	{
 		title: 'Notepad',
 		component: Notepad
+	},
+	{
+		title: 'Calculator',
+		component: Calculator
 	},
 	{
 		title: 'Calendar',
