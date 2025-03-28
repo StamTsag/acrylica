@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { wallpaper } from '../../../stores';
+	import { wallpaper } from '../../../runes.svelte';
 	import { wallpaperCount, wallpaperNames } from '../../../vars';
 	import Button from '../ui/button/button.svelte';
 
@@ -8,11 +8,11 @@
 
 		localStorage.setItem('wallpaper', url);
 
-		$wallpaper = url;
+		wallpaper.value = url;
 	}
 
 	function isActive(index: number) {
-		return $wallpaper === `/wallpapers/${index}.jpg`;
+		return wallpaper.value === `/wallpapers/${index}.jpg`;
 	}
 </script>
 

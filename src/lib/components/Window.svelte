@@ -2,14 +2,14 @@
 	import { blur, scale } from 'svelte/transition';
 	import Button from './ui/button/button.svelte';
 	import { X } from 'lucide-svelte';
-	import { apps } from '../../stores';
+	import { apps } from '../../runes.svelte';
 	import { quartInOut } from 'svelte/easing';
 	import { draggable } from '@neodrag/svelte';
 
 	let { children, title } = $props();
 
 	function closeApp() {
-		$apps = $apps.filter((v) => v.title !== title);
+		apps.value = apps.value.filter((v) => v.title !== title);
 	}
 </script>
 
