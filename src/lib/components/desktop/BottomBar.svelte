@@ -1,21 +1,21 @@
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
-	import { apps } from '../../../stores';
+	import { apps } from '../../../runes.svelte';
 	import type { App, AppNames } from '../../../types';
 	import { items } from '../../../vars';
 	import Button from '../ui/button/button.svelte';
 
 	function toggleApp(title: AppNames) {
 		if (isActive(title)) {
-			$apps = $apps.filter((v) => v.title !== title);
+			apps.value = apps.value.filter((v) => v.title !== title);
 		} else {
-			$apps.push(items.find((v) => v.title === title) as App);
-			$apps = $apps;
+			apps.value.push(items.find((v) => v.title === title) as App);
+			apps.value = apps.value;
 		}
 	}
 
 	function isActive(title: AppNames) {
-		return $apps.map((v) => v.title).includes(title);
+		return apps.value.map((v) => v.title).includes(title);
 	}
 </script>
 

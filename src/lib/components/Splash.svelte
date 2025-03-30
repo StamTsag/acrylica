@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Progress from './ui/progress/progress.svelte';
-	import { loading, wallpaper } from '../../stores';
+	import { loading, wallpaper } from '../../runes.svelte';
 	import { fly, scale } from 'svelte/transition';
 
 	let progress = 0;
@@ -10,7 +10,7 @@
 		const savedWallpaper = localStorage.getItem('wallpaper');
 
 		if (savedWallpaper) {
-			$wallpaper = savedWallpaper;
+			wallpaper.value = savedWallpaper;
 		}
 	}
 
@@ -21,7 +21,7 @@
 			if (progress >= 100) {
 				clearInterval(interval);
 
-				$loading = false;
+				loading.value = false;
 
 				return;
 			}
