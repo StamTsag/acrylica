@@ -12,6 +12,9 @@
 		if (savedWallpaper) {
 			wallpaper.value = savedWallpaper;
 		}
+
+		const image = new Image();
+		image.src = wallpaper.value;
 	}
 
 	onMount(() => {
