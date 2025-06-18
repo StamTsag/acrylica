@@ -1,7 +1,9 @@
 <h2 align='center'>
 
-<img src="https://github.com/StamTsag/acrylica/blob/main/.github/assets/preview.png" alt='Acrylica preview'>
-  
+<a href="https://acrylica.stamtsag.com" target="_blank" rel="noopener noreferrer">
+  <img src="https://github.com/StamTsag/acrylica/blob/main/.github/assets/preview.png?raw=true" align="center" />
+</a>
+
 </h2>
 
 ## Running
