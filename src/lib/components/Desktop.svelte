@@ -4,12 +4,14 @@
 	import Background from './desktop/Background.svelte';
 	import TopBar from './desktop/TopBar.svelte';
 	import BottomBar from './desktop/BottomBar.svelte';
+	import DesktopSelection from './desktop/DesktopSelection.svelte';
 	import Apps from './Apps.svelte';
 </script>
 
 {#if !loading.value}
 	<div in:fade={{ duration: 250 }} class="rounded-full">
 		<TopBar />
+		<DesktopSelection />
 		<Apps />
 		<Background />
 		<BottomBar />
